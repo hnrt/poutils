@@ -29,7 +29,7 @@ potmerge might be useful when you run xgettext for an individual source file.
 
 ### poupdate
 
-poupdate reads POT data and PO data from these files respectively,
+poupdate reads POT data and PO data from the given files respectively,
 add the entries that exist only in POT to PO,
 remove the entries that don't exist in POT from PO,
 and finally writes the resulting data back to the PO file.
