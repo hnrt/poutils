@@ -1,0 +1,26 @@
+.\" Manpage for poupdate.
+.\" Contact me@hideakin.com to correct errors or typos.
+.TH poupdate 1 "09 Jul 2017" "1.0" "poupdate man page"
+.SH NAME
+poupdate \- update gettext portable object file
+.SH SYNOPSIS
+poupdate POTFILE POFILE
+.br
+poupdate -copy POFILE
+.SH DESCRIPTION
+If POTFILE and POFILE are given,
+poupdate reads gettext portable object template data (POT) and gettext portable object data (PO) from these files respectively,
+add the entries that exist only in POT to PO,
+remove the entries that don't exist in POT from PO,
+and finally writes the resulting data back to the PO file.
+.PP
+If -copy option is specified,
+poupdate reads data from the PO file,
+copies msgid to msgstr that is empty,
+and writes the resulting data back to the PO file.
+.SH SEE ALSO
+pocheck(1), potmerge(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Hideaki Narita (me@hideakin.com)

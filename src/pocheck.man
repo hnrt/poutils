@@ -1,0 +1,17 @@
+.\" Manpage for pocheck.
+.\" Contact me@hideakin.com to correct errors or typos.
+.TH pocheck 1 "09 Jul 2017" "1.0" "pocheck man page"
+.SH NAME
+pocheck \- print gettext portable object entries that need to be translated
+.SH SYNOPSIS
+pocheck POFILE...
+.SH DESCRIPTION
+pocheck reads gettext portable object data from the given files,
+and prints msgids whose msgstr is empty to the standard output.
+pocheck can be used when you want to find which entries need to be translated.
+.SH SEE ALSO
+potmerge(1), poupdate(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Hideaki Narita (me@hideakin.com)

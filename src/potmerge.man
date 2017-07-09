@@ -1,0 +1,17 @@
+.\" Manpage for potmerge.
+.\" Contact me@hideakin.com to correct errors or typos.
+.TH potmerge 1 "09 Jul 2017" "1.0" "potmerge man page"
+.SH NAME
+potmerge \- merge gettext portable object template files
+.SH SYNOPSIS
+potmerge POTFILE...
+.SH DESCRIPTION
+potmerge reads gettext portable object template data from the given files,
+merges the entries by msgid,
+and finally writes the resulting data to the standard output.
+.SH SEE ALSO
+pocheck(1), poupdate(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Hideaki Narita (me@hideakin.com)
